@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    background: #222222;
+    background: -webkit-gradient(
+        linear, 0 0, 0 100%,
+        from(#000000),
+        color-stop(50%, #222222),
+        color-stop(100%, #777777)
+    );
+
+    font-family: 'LiberationSans', Helvetica;
+    font-weight: bold;
+    color: #fff;
+}
+
+.clock {
+    display: none;
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+}
+
+.clocking-Jam .jam,
+.clocking-Lineup .lineup,
+.clocking-Timeout .timeout,
+.clocking-Intermission .intermission {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.jam {
+    background: #900;
+}
+
+.lineup,
+.timeout {
+    background: #090;
+}
+
+.lineup.warning {
+    background: #f90;
+}
+
+.title {
+    font-size: 8vw;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter {
+    font-size: 20vw;
+    font-weight: 300;
+}
